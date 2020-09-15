@@ -1,7 +1,4 @@
-#include "Parm.h"
-#include "Error.h"
-#include <cwchar>
-#include <wchar.h>
+#include "stdafx.h"
 
 namespace Parm
 {

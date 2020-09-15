@@ -6,7 +6,7 @@
 #define IN_CODE_DELIMITER '|'
 
 #define IN_CODE_TABLE {\
-/*16*/	IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::S, IN::T, IN::F, IN::F, IN::F, IN::F, IN::F, \
+/*16*/	IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::T, IN::S, IN::I, IN::F, IN::F, IN::F, IN::F, IN::F, \
         IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, \
         IN::S, IN::F, IN::F, IN::F, IN::F, IN::F, IN::F, IN::N, IN::N, IN::N, IN::N, IN::N, IN::N, IN::F, IN::F, IN::N,\
         IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::T, IN::F, IN::N, IN::F, IN::N, IN::F, IN::F, \

@@ -1,7 +1,6 @@
-
 #define _CRT_SECURE_NO_WARNINGS
 
-#include "Log.h"
+#include "stdafx.h"
 
 namespace Log
 {
@@ -117,10 +116,12 @@ namespace Log
 			std::cout << "Ошибка " << err.id << ": " << err.message << ", строка " << err.inext.line << ", позиция " << err.inext.col << "\n\n";
 	}
 
-	void Close(LOG log) // хыкратие входного потока
+	void Close(LOG& log) // хыкратие входного потока
 	{
+		if (!log.stream)
+			return;
 		log.stream->close();
 		delete log.stream;
-		return;
+		log.stream = nullptr;
 	}
 }

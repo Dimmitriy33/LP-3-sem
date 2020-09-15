@@ -1,5 +1,4 @@
-#include "Error.h"
-#include <string.h>
+#include "stdafx.h"
 namespace Error
 {
 	//серии ошибок: 0 -  99 - системные ошибки
@@ -16,12 +15,12 @@ namespace Error
         ERROR_ENTRY(100, "Параметр -in должен быть задан"),
         ERROR_ENTRY_NODEF(101), ERROR_ENTRY_NODEF(102), ERROR_ENTRY_NODEF(103),
         ERROR_ENTRY(104, "Превышена длина входного параметра"),
-        ERROR_ENTRY_NODEF(105), ERROR_ENTRY_NODEF(106), ERROR_ENTRY_NODEF(107),
-        ERROR_ENTRY_NODEF(108), ERROR_ENTRY_NODEF(109),
+        ERROR_ENTRY(105, "Превышен максимальный размер таблицы лексем"), ERROR_ENTRY(106, "Превышен размер таблицы лексем"), ERROR_ENTRY_NODEF(107),
+        ERROR_ENTRY(108, "Превышен максимальный размер таблицы идентификаторов"), ERROR_ENTRY_NODEF(109, "Превышен максимальный размер таблицы идентификаторов"),
         ERROR_ENTRY(110, "Ошибка при открытии файла с исходным кодом (-in)"),
         ERROR_ENTRY(111, "Недопустимый символ в исходном файле (-in)"),
         ERROR_ENTRY(112, "Ошибка при создании файла протокола (-log)"),
-        ERROR_ENTRY_NODEF(113), ERROR_ENTRY_NODEF(114), ERROR_ENTRY_NODEF(115),
+        ERROR_ENTRY(113, "Ошибка лексического анализа"), ERROR_ENTRY_NODEF(114), ERROR_ENTRY_NODEF(115),
         ERROR_ENTRY_NODEF(116), ERROR_ENTRY_NODEF(117), ERROR_ENTRY_NODEF(118), ERROR_ENTRY_NODEF(119),
         ERROR_ENTRY_NODEF10(120), ERROR_ENTRY_NODEF10(130), ERROR_ENTRY_NODEF10(140), ERROR_ENTRY_NODEF10(150),
         ERROR_ENTRY_NODEF10(160), ERROR_ENTRY_NODEF10(170), ERROR_ENTRY_NODEF10(180), ERROR_ENTRY_NODEF10(190),

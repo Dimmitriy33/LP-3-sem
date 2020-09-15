@@ -1,11 +1,4 @@
-﻿#include <tchar.h>
-#include <iostream>
-//#include "FST.h"
-#include "Error.h"
-#include "In.h"
-#include "Log.h"
-#include "Parm.h"
-#include <fstream>
+﻿#include "stdafx.h"
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -21,14 +14,16 @@ int _tmain(int argc, _TCHAR* argv[])
 		Log::WriteParm(log, parm);
 		In::IN in = In::getin(parm); // для ввода и проверки информации из файла
 		Log::WriteIn(log, in);
-		Log::Close(log);
 		/*std::cout << in.text;*/
+		Lex::LEX lex = Lex::lexAnaliz(log, in);
+		LT::showTable(lex.lextable, parm);
 
-		std::fstream fout;
-		fout.open(parm.out, std::ios::app);//ios::app - дописыввать в конец файла
-		if (!fout.is_open())
-			throw ERROR_THROW(110);
-		fout << in.text;
+		//std::fstream fout;
+		//fout.open(parm.out, std::ios::app);//ios::app - дописыввать в конец файла
+		//if (!fout.is_open())
+		//	throw ERROR_THROW(110);
+		//fout << in.text;
+		//Log::Close(log);
 		
 	}
 	catch (Error::ERROR e)

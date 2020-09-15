@@ -1,9 +1,4 @@
-#include "In.h"
-#include "Error.h"
-//#include "FST.h"
-#include <fstream>
-#include <iostream>
-#include <string>
+#include "stdafx.h"
 
 namespace In
 {
