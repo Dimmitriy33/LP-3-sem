@@ -57,7 +57,7 @@ namespace Lex
 		{
 			if (!strcmp((char*)word[i], ""))
 				return NULL;
-			std::cout << i << ">"<< word[i] << " ";
+			std::cout << i << ">"<< word[i] << '\n';
 		}
 		return word;
 	}
