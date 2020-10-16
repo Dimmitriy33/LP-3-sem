@@ -142,7 +142,7 @@ bool PolishNotation(int i, LT::LexTable& lextable, IT::IdTable& idtable)
 	{
 		if (!queue.empty()) {
 			lextable.table[posLex++] = queue.front();
-			/*cout << lex.idtable.table[queue.front().idxTI].id << " ";			*/	// вывод в консоль
+			cout << idtable.table[queue.front().idxTI].id << " ";				// вывод в консоль
 			queue.pop();
 		}
 		else

@@ -13,7 +13,7 @@
 #ifdef testPolish
 	#define EXP1 28
 	#define EXP2 50
-	#define EXP3 69
+	#define EXP3 59
 #endif
 
 int _tmain(int argc, _TCHAR* argv[]) {
